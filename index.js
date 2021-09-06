@@ -6,13 +6,17 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const notes = [2000,500,100,20,10,5,1];
 
+// console.log(billAmount.value);
+// console.log("it is working")
+
 checkButton.addEventListener("click" ,function validateBillAndCashAmount(){
-    
+    hideMessage();
     if(billAmount.value > 0){
 
-        if(cashGiven.value >= billAmount.value){
+        if(billAmount.value <= cashGiven.value || billAmount.value == 50){
             const diff = cashGiven.value - billAmount.value;
             calculateChange(diff);
+            
         }
         else{
             showErrorMessage("Cash given should be greater than or equal to bill value");

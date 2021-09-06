@@ -1,10 +1,49 @@
 *{
+    background-color: rgb(216, 203, 203);
 
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    
 }
 
+table, th, td {
+    border: 1px solid black;
+    width: 300px;
+ }
+
+#check-button{
+    background-color: rgb(216, 203, 203); 
+    border: 2px solid rgb(97, 91, 91);
+    border-radius: 3px;
+    color: black;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+}
+#check-button {
+    transition-duration: 0.4s;
+  }
+  
+#check-button:hover {
+    background-color: rgb(39, 18, 18); 
+    color: white;
+  }
+
+#bill-amount{
+    margin-bottom: 20px;
+    display: block;
+}
+
+#cash-given{
+    margin-bottom: 20px;
+    display: block;
+}
