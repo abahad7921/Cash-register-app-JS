@@ -4,21 +4,19 @@
 }
 
 .container{
-    /* display: block; */
     
-    /* margin-left: auto;
-    margin-right: auto; */
     width: 50%;
     margin: auto;
     
 }
 
-h1{
+h1,p{
     text-align: center;
 }
 table, th, td {
     border: 1px solid black;
     width: 300px;
+    margin: auto;
  }
 
 #check-button{
@@ -29,10 +27,16 @@ table, th, td {
     padding: 15px 70px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
-    
+    margin: auto;
 }
+
+input{
+    width: 100%;
+    border-radius: 8px;
+}
+
 #check-button {
     transition-duration: 0.4s;
   }
