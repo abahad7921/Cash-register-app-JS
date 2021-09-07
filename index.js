@@ -6,15 +6,18 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 
 const notes = [2000,500,100,20,10,5,1];
 
-// console.log(billAmount.value);
-// console.log("it is working")
-
 checkButton.addEventListener("click" ,function validateBillAndCashAmount(){
     hideMessage();
-    if(billAmount.value > 0){
 
-        if(billAmount.value <= cashGiven.value || billAmount.value == 50){
-            const diff = cashGiven.value - billAmount.value;
+    const billamt = Number(billAmount.value);  //typecast string value to number
+    const cashamt = Number(cashGiven.value);
+
+    console.log(typeof(billamt));
+
+    if(billamt > 0){
+
+        if(cashamt >= billamt){
+            const diff = cashamt - billamt;
             calculateChange(diff);
             
         }
